@@ -3,7 +3,7 @@ import string
 
 adjectives = ['cubic', 'fragrant', 'rough', 'wet', 'calm', 'hairy',
               'sleepy', 'slow', 'hot', 'cold', 'big', 'red', 'orange',
-              'yellow', 'green', 'blue']
+              'yellow', 'green' ]
 nouns = ['apple', 'dinosaur', 'ball', 'goat', 'dragon', 'car', 'car',
          'eggplant ', 'jelly', 'sugar', 'avocado']
 while True:
