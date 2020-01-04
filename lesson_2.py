@@ -6,38 +6,61 @@
 Вывести на экран циклом пять строк из нулей, причем каждая строка должна быть пронумерована.
 '''
 
+for i in range(1,6):
+  print(i, 0)
+
+#или
+
+e = 1
+
+while e <= 5:
+    print(e,  '0')
+    e = e + 1
+
 '''
 Задача 2
 Пользователь в цикле вводит 10 цифр. Найти количество введеных пользователем цифр 5.
 '''
+num = 0
+
+for i in range(10):
+    answer = int(input('Введите любую цифру: '))
+    if answer == 5:
+        num += 1
+print('Количество пятёрок равно', num)
 
 '''
 Задача 3
 Найти сумму ряда чисел от 1 до 100. Полученный результат вывести на экран.
 '''
-# sum = 0
-#
-# for i in range(1,101):
-#     sum+=i
-# print(sum)
+sum = 0
+
+for i in range(1,101):
+   sum +=i
+print(sum)
 
 '''
 Задача 4
 Найти произведение ряда чисел от 1 до 10. Полученный результат вывести на экран.
 '''
+op = 1
+
+for i in range(1,11):
+   op *=i
+print(op)
 
 '''
 Задача 5
 Вывести цифры числа на каждой строчке.
 '''
 
-# integer_number = 2129
-#
-# #print(integer_number%10,integer_number//10)
-#
-# while integer_number>0:
-#     print(integer_number%10)
-#     integer_number = integer_number//10
+integer_number = 2129
+
+print(integer_number%10,integer_number//10)
+
+while integer_number>0:
+    print(integer_number%10)
+    integer_number = integer_number//10
 
 '''
 Задача 6
