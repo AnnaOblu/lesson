@@ -66,13 +66,22 @@ while integer_number>0:
 Задача 6
 Найти сумму цифр числа.
 '''
-
+vat = input('Введите число')
+list(vat)
+map(int,list(vat))
+sum(map(int, list(vat)))
+print(sum(map(int, list(vat))))
 
 '''
 Задача 7
 Найти произведение цифр числа.
 '''
-
+vat = input('Введите число')
+map(int,list(vat))
+n=1
+for i in map(int,list(vat)) :
+    n = n * i
+print(n)
 '''
 Задача 8
 Дать ответ на вопрос: есть ли среди цифр числа 5?
@@ -89,9 +98,26 @@ else: print('No')
 Задача 9
 Найти максимальную цифру в числе
 '''
-
+n = int(input('Введите число'))
+y = 0
+max = 0
+while n > 0:
+    last = n%10
+    y = y + 1
+    if last > max:
+        max = last
+    n = n // 10
+print('Mаксимальная цифрв в числе ', max )
 
 '''
 Задача 10
 Найти количество цифр 5 в числе
 '''
+n = int(input('Введите число'))
+y = 0
+while n >0:
+    last = n % 10
+    if last == 5 :
+        y = y + 1
+    n = n // 10
+print('Количество цифр 5 равно ', y)
