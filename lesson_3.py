@@ -37,7 +37,7 @@ for i in range(len(new_list)):
     x_dict[new_list[i]] = new_list.count(new_list[i])
 print(x_dict)
 
-# задание 5 вывести 5 наиболее часто встречающихся слов (sort), вывести количество разных слов в тексте (set).
+# задание 5 вывести 5 наиболее часто встречающихся слов, вывести количество разных слов в тексте.
 
 y_dict = Counter(x_dict).most_common(5)
 
