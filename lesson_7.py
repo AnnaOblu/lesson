@@ -1,4 +1,6 @@
 import datetime
+import csv
+import json
 
 from docx.shared import Cm
 from docxtpl import DocxTemplate, InlineImage
@@ -32,3 +34,23 @@ def generate_report(auto, power, year):
 
 
 generate_report('Subaru Baja', '177', '2002')
+
+list_1 = [['auto', 'power', 'year'],['Subaru Baja', '177', '2002']]
+
+with open('auto.csv', 'w') as f:
+    writer = csv.writer(f, delimiter = '*')
+    writer.writerows(list_1)
+
+with open('auto.csv') as m:
+    reader = csv.reader(m, delimiter = '*')
+    for row in reader:
+        print(row)
+
+dict = {'auto': 'Subaru Baja', 'power': '177', 'year': '2002'}
+
+with open('dict_to_json.txt', 'w') as f:
+    json.dump(dict, f)
+
+with open('dict_to_json.txt') as f:
+    data = json.load(f)
+    print(data)
