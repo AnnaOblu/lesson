@@ -1,3 +1,4 @@
+# Задание 1, 3
 def benchmark(func):
     import time
     def wrapper(*args, **kwargs):
@@ -14,10 +15,11 @@ def get_memory(f):
         print('Объем занимаемой памяти: ', sys.getsizeof(f))
     return wrapper
 
+# Задание 2, 4
 @get_memory
 @benchmark
 def my_list():
-   simple_list = [x+1 for x in range(100000)]
+   simple_list = [x+1 for x in range(1000000)]
    for i in simple_list:
       print('Список')
       return simple_list
@@ -32,6 +34,6 @@ def my_gen(num):
     return simple_generator
 
 
-my_gen(100000)
+my_gen(1000000)
 
 
